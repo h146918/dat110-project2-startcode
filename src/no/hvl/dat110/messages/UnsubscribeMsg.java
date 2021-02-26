@@ -17,17 +17,17 @@ public class UnsubscribeMsg extends Message {
 		this.unsubscribe = unsubscribe;
 	}
 
-	public String getUnsubscribeMsg() {
+	public String getUnsubscribe() {
 		return unsubscribe;
 	}
 
-	public void setUnsubscribeMsg(String unsubscribe) {
+	public void setUnsubscribe(String unsubscribe) {
 		this.unsubscribe = unsubscribe;
 	}
 
 	@Override
 	public String toString() {
-		return super.toString() + " UnsubscribeMsg [unsubscribeMsg=" + unsubscribe + "]";
+		return "UnsubscribeMsg [unsubscribeMsg=" + unsubscribe + "]";
 	}
 	
 	

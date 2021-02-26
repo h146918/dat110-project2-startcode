@@ -24,6 +24,10 @@ public class ClientSession {
 		}
 	}
 
+	public Connection getConnection() {
+		return this.connection;
+	}
+	
 	public String getUser() {
 		return user;
 	}

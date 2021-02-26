@@ -17,17 +17,20 @@ public class SubscribeMsg extends Message {
 		this.subscribe = subscribe;
 	}
 
-	public String getSubscribeMsg() {
+	public String getSubscribe() {
 		return subscribe;
 	}
 
-	public void setSubscribeMsg(String subscribe) {
+	public void setSubscribe(String subscribe) {
 		this.subscribe = subscribe;
 	}
 
 	@Override
 	public String toString() {
-		return super.toString() + " SubscribeMsg [subscribeMsg=" + subscribe + "]";
+		return  "SubscribeMsg [subscribe=" + subscribe + "]";
 	}
+
+	
+	
 
 }
