@@ -8,6 +8,28 @@ public class UnsubscribeMsg extends Message {
 	// Implement object variables - a topic is required
 
 	// Constructor, get/set-methods, and toString method
-	// as described in the project text
+	// as described in the project text'
+	
+	private String unsubscribe;
+	
+	public UnsubscribeMsg(String user, String unsubscribe) {
+		super(MessageType.UNSUBSCRIBE, user);
+		this.unsubscribe = unsubscribe;
+	}
+
+	public String getUnsubscribeMsg() {
+		return unsubscribe;
+	}
+
+	public void setUnsubscribeMsg(String unsubscribe) {
+		this.unsubscribe = unsubscribe;
+	}
+
+	@Override
+	public String toString() {
+		return super.toString() + " UnsubscribeMsg [unsubscribeMsg=" + unsubscribe + "]";
+	}
+	
+	
 	
 }

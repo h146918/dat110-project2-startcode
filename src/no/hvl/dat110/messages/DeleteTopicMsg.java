@@ -10,4 +10,28 @@ public class DeleteTopicMsg extends Message {
 	// Constructor, get/set-methods, and toString method
 	// as described in the project text
 
+	private String deleteTopic;
+	
+	public DeleteTopicMsg(String user, String deleteTopic) {
+		super(MessageType.DELETETOPIC, user);
+		this.deleteTopic = deleteTopic;
+		
+	}
+
+	public String getDeleteTopic() {
+		return deleteTopic;
+	}
+
+	public void setDeleteTopic(String deleteTopic) {
+		this.deleteTopic = deleteTopic;
+	}
+
+	@Override
+	public String toString() {
+		return super.toString() +  " DeleteTopicMsg [deleteTopic=" + deleteTopic + "]";
+	}
+	
+	
+	
+	
 }
